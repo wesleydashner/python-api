@@ -3,6 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
+      - printf '[{"name":"python-api","imageUri":"421536325490.dkr.ecr.us-west-1.amazonaws.com/python-api:latest"}]' > imagedefinitions.json
       - make run
 
 artifacts:
